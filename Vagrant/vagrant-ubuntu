@@ -1,0 +1,19 @@
+# Define the Vagrant configuration
+Vagrant.configure("2") do |config|
+  # Configure the box
+  config.vm.box = "ubuntu/jammy64"
+
+  # Forward ports if needed
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  # Set up provider-specific configurations
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "4096" # Customize the amount of RAM
+    vb.cpus = 4 # Customize the number of CPUs
+  end
+
+  # Provision the box if needed
+  # config.vm.provision "shell", path: "bootstrap.sh"
+end
+
+

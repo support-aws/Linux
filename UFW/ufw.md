@@ -34,3 +34,11 @@ udp6:
   8472 * (-)
 ```
 
+**Enable UFW:** Enables the firewall, activating the current rules
+``` 
+sudo ufw enable
+```
+**Disable UFW:** Disables the firewall, turning off all rules
+``` 
+sudo ufw disable
+```
